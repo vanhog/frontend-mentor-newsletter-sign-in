@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-roboto: 'Roboto', sans-serif;
+  --color-nl-red: hsl(4, 100%, 67%);
+  --color-nl-blue-800: hsl(234, 29%, 20%);
+  --color-nl-blue-700: hsl(235, 18%, 26%);
+  --color-nl-grey-700: hsl(235, 18%, 26%);
+  --color-nl-grey: hsl(0, 0%, 58%);
+  --color-nl-white: hsl(0, 0%, 100%);
+}
+
+@layer components {
+  .text-preset-1 {
+    @apply text-[2.5rem] tracking-normal leading-4 text-nl-blue-800 font-bold md:text-[3.5rem];
+  }
+
+  .text-preset-2 {
+    @apply text-base tracking-normal leading-6 text-nl-blue-800 font-normal;
+  }
+  .text-preset-2-button {
+    @apply text-base tracking-normal leading-6 text-nl-white font-bold;
+  }
+
+  .text-preset-3 {
+    @apply text-xs tracking-normal leading-6 text-nl-blue-800;
+  }
+
+  .attribution {
+    @apply text-sm text-nl-grey my-6 text-center;
+  }
+
+  .attribution a {
+    @apply text-nl-blue-700;
+  }
+}
