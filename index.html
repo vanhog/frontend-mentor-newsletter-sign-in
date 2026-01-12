@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body class="font-roboto bg-nl-blue-700">
-    <!-- Sign-up form start -->
     <main class="flex flex-col justify-center items-center h-screen">
+      <!-- Sign-up form start -->
       <div
         id="subscribe"
-        class="bg-nl-white md:rounded-xl w-full max-w-sm md:max-w-full md:w-152 lg:w-226 flex flex-col lg:flex-row justify-center items-center text-nl-red md:px-10 md:py-11"
+        class="bg-nl-white h-200 md:h-auto md:rounded-xl w-full max-w-sm md:max-w-full md:w-152 lg:w-226 flex flex-col lg:flex-row justify-start md:justify-center items-center text-nl-red md:px-10 md:py-11"
       >
         <div class="order-1 lg:order-2 w-full">
           <img
@@ -41,24 +41,68 @@
             alt="Symbolic illustration of a desktop with a tablet on it, overlaid with three elements: an Apple window, an upward-trending graph, and a circular traffic sign showing a speed limit of 94."
           />
         </div>
-        <div class="order-2 lg:order-1">
-          Stay updated! Join 60,000+ product managers receiving monthly updates
-          on: Product discovery and building what matters Measuring to ensure
-          updates are a success And much more! Email address email@company.com
-          Subscribe to monthly newsletter
+        <div class="order-2 lg:order-1 pt-10 pb-11 px-6">
+          <div class="text-preset-1">Stay updated!</div>
+          <div class="text-preset-2">
+            Join 60,000+ product managers receiving monthly updates on:
+          </div>
+
+          <div id="bullets" class="pt-6">
+            <div id="bullet1" class="flex items-start pb-2">
+              <img src="./assets/images/icon-list.svg" class="pe-5" alt="" />
+              <div class="text-preset-2">
+                Product discovery and building what matters
+              </div>
+            </div>
+            <div id="bullet2" class="flex items-start pb-2">
+              <img src="./assets/images/icon-list.svg" class="pe-5" alt="" />
+              <div class="text-preset-2">
+                Measuring to ensure updates are a success
+              </div>
+            </div>
+            <div id="bullet3" class="flex items-start pb-8">
+              <img src="./assets/images/icon-list.svg" class="pe-5" alt="" />
+              <div class="text-preset-2">And much more!</div>
+            </div>
+          </div>
+          <div class="text-preset-3 font-bold">Email address</div>
+          email@company.com Subscribe to monthly newsletter
         </div>
       </div>
       <!-- Sign-up form end -->
 
       <!-- Success message start -->
-      <div id="success" class="text-nl-blue-800 hidden">
-        Thanks for subscribing! A confirmation email has been sent to
-        ash@loremcompany.com. Please open it and click the button inside to
-        confirm your subscription. Dismiss message
+      <div
+        id="success"
+        class="bg-nl-white hidden w-full max-w-sm h-200 md:h-auto md:rounded-xl md:max-w-full md:w-126 lg:w-126 flex flex-col justify-between md:justify-center items-center pt-36 px-6 pb-18 md:px-16 md:py-15"
+      >
+        <div>
+          <div class="flex w-full px-0">
+            <img src="./assets/images/icon-success.svg" alt="" />
+          </div>
+          <div class="py-8 text-left text-preset-1 w-full">
+            Thanks for subscribing!
+          </div>
+          <div class="text-preset-2">
+            A confirmation email has been sent to
+            <b><span id="user_mail">ash@loremcompany.com</span></b
+            >. Please open it and click the button inside to confirm your
+            subscription.
+          </div>
+        </div>
+        <div class="w-full mt-8">
+          <button
+            type="button"
+            aria-label="Button to dismiss success message"
+            class="bg-nl-blue-800 w-full py-5 rounded-xl text-white"
+          >
+            Dismiss message
+          </button>
+        </div>
       </div>
       <!-- Success message end -->
     </main>
-    <footer>
+    <footer class="my-60">
       <div id="attribution" aria-label="Attributions" class="attribution">
         Challenge by
         <a
