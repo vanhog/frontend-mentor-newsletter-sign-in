@@ -27,6 +27,10 @@
     @apply text-xs tracking-normal leading-6 text-nl-blue-800;
   }
 
+  .button-gradient {
+    @apply bg-gradient-to-r from-nl-red to-orange-500;
+  }
+
   .attribution {
     @apply text-sm text-nl-grey my-6 text-center;
   }
