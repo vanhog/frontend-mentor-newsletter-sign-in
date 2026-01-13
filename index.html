@@ -69,23 +69,31 @@
           </div>
           <div class="flex justify-between items-center">
             <div class="text-preset-3 font-bold">Email address</div>
-            <div class="text-preset-3 font-bold text-nl-red">
+            <div
+              id="emailError"
+              class="text-preset-3 font-bold text-nl-red hidden"
+            >
               Valid email required
             </div>
           </div>
-          <form action="#">
-            <input
-              type="email"
-              aria-label="Input form for email address"
-              placeholder="email@company.com"
-              class="w-full p-4 border border-nl-blue-800 rounded-xl mt-3 mb-5 text-nl-grey-700"
-            />
+          <form id="form" action="#" novalidate>
+            <div>
+              <input
+                type="email"
+                aria-label="Input form for email address"
+                id="address"
+                placeholder="email@company.com"
+                onclick="clear_errorMsg()"
+                class="w-full p-4 border border-nl-blue-800 rounded-xl mt-3 mb-5 text-nl-grey-700"
+              />
+              <span aria-live="polite" id="email-error"></span>
+            </div>
             <button
-              type="button"
+              type="submit"
               aria-label="Button to activate subscription"
               class="bg-nl-blue-800 lg:hover:bg-linear-to-r lg:hover:from-nl-red lg:hover:to-orange-500 text-white text-preset-2 w-full rounded-xl py-5"
             >
-              <b> Subscribe to monthly newsletter</b>
+              <b>Subscribe to monthly newsletter</b>
             </button>
           </form>
         </div>
@@ -115,7 +123,8 @@
           <button
             type="button"
             aria-label="Button to dismiss success message"
-            class="bg-nl-blue-800 lg:hover:bg-gradient-to-r lg:hover:from-nl-red lg:hover:to-orange-500 w-full py-5 rounded-xl text-white"
+            onclick="dismissMsg()"
+            class="bg-nl-blue-800 lg:hover:bg-linear-to-r lg:hover:from-nl-red lg:hover:to-orange-500 w-full py-5 rounded-xl text-white"
           >
             Dismiss message
           </button>
@@ -140,5 +149,6 @@
         >..
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
