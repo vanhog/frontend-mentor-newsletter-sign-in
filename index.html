@@ -12,16 +12,14 @@
       href="./assets/images/favicon-32x32.png"
     />
 
-    <title>
-      Frontend Mentor | Newsletter sign-up form with success message
-    </title>
+    <title>Frontend Mentor | Newsletter sign-up form</title>
     <link rel="stylesheet" href="./output.css" />
   </head>
   <body class="font-roboto bg-nl-blue-700">
     <main class="flex flex-col justify-center items-center h-screen">
       <h1 class="sr-only">Newsletter Sign-In component</h1>
       <!-- Sign-up form start -->
-      <div
+      <section
         id="subscribe"
         class="bg-nl-white h-auto md:h-auto md:rounded-xl w-full max-w-sm md:max-w-full md:w-152 lg:w-226 flex flex-col lg:flex-row justify-start md:justify-center items-center text-nl-red md:px-10 md:py-11"
       >
@@ -73,6 +71,7 @@
             <div
               id="emailError"
               class="text-preset-3 font-bold text-nl-red hidden"
+              aria-describedby="address"
             >
               Valid email required
             </div>
@@ -82,7 +81,6 @@
               <label for="address" class="sr-only">E-Mail</label>
               <input
                 type="email"
-                aria-label="Input form for email address"
                 id="address"
                 placeholder="email@company.com"
                 onclick="clear_errorMsg()"
@@ -99,11 +97,11 @@
             </button>
           </form>
         </div>
-      </div>
+      </section>
       <!-- Sign-up form end -->
 
       <!-- Success message start -->
-      <div
+      <section
         id="success"
         class="bg-nl-white hidden w-full max-w-sm h-200 md:h-auto md:rounded-xl md:max-w-full md:w-126 lg:w-126 flex flex-col justify-between md:justify-center items-center pt-36 px-6 pb-18 md:px-16 md:py-15"
       >
@@ -131,11 +129,11 @@
             Dismiss message
           </button>
         </div>
-      </div>
+      </section>
       <!-- Success message end -->
     </main>
     <footer class="my-60">
-      <div id="attribution" aria-label="Attributions" class="attribution">
+      <div id="attribution" class="attribution">
         Challenge by
         <a
           href="https://www.frontendmentor.io"
