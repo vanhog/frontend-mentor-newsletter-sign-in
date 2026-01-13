@@ -5,9 +5,7 @@ const errorMsg = document.getElementById('emailError');
 const handleSubmit = (e) => {
   e.preventDefault(); // prevent the default behaviour
 
-  let dirty = true;
-
-  inString = addressField.value.toString();
+  let inString = addressField.value.toString();
 
   if (isMail(inString)) {
     document.getElementById('user_mail').innerText = inString;
