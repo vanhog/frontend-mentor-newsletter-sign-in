@@ -13,7 +13,7 @@
 
 @layer components {
   .text-preset-1 {
-    @apply text-[2.5rem] tracking-normal leading-14  text-nl-blue-800 font-bold md:text-[3.5rem];
+    @apply text-[2.5rem] tracking-normal leading-14 text-nl-blue-800 font-bold md:text-[3.5rem] text-shadow-lg md:text-shadow-none;
   }
 
   .text-preset-2 {
